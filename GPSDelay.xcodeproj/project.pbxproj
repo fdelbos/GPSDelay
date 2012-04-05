@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B64F6DE0152D9BFE00C66363 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64F6DDF152D9BFE00C66363 /* UIKit.framework */; };
+		B64F6DE2152D9BFE00C66363 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64F6DE1152D9BFE00C66363 /* Foundation.framework */; };
+		B64F6DE4152D9BFE00C66363 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64F6DE3152D9BFE00C66363 /* CoreGraphics.framework */; };
+		B64F6DE6152D9BFE00C66363 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64F6DE5152D9BFE00C66363 /* CoreData.framework */; };
+		B64F6DEC152D9BFE00C66363 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B64F6DEA152D9BFE00C66363 /* InfoPlist.strings */; };
+		B64F6DEE152D9BFE00C66363 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B64F6DED152D9BFE00C66363 /* main.m */; };
+		B64F6DF2152D9BFE00C66363 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B64F6DF1152D9BFE00C66363 /* AppDelegate.m */; };
+		B64F6DF5152D9BFE00C66363 /* GPSDelay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B64F6DF3152D9BFE00C66363 /* GPSDelay.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B64F6DDB152D9BFE00C66363 /* GPSDelay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSDelay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64F6DDF152D9BFE00C66363 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B64F6DE1152D9BFE00C66363 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B64F6DE3152D9BFE00C66363 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B64F6DE5152D9BFE00C66363 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B64F6DE9152D9BFE00C66363 /* GPSDelay-Info.plist */ = {isa = PBXFileReference; path = "GPSDelay-Info.plist"; sourceTree = "<group>"; };
+		B64F6DEB152D9BFE00C66363 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B64F6DED152D9BFE00C66363 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B64F6DEF152D9BFE00C66363 /* GPSDelay-Prefix.pch */ = {isa = PBXFileReference; path = "GPSDelay-Prefix.pch"; sourceTree = "<group>"; };
+		B64F6DF0152D9BFE00C66363 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		B64F6DF1152D9BFE00C66363 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B64F6DF4152D9BFE00C66363 /* GPSDelay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GPSDelay.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B64F6DD8152D9BFE00C66363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64F6DE0152D9BFE00C66363 /* UIKit.framework in Frameworks */,
+				B64F6DE2152D9BFE00C66363 /* Foundation.framework in Frameworks */,
+				B64F6DE4152D9BFE00C66363 /* CoreGraphics.framework in Frameworks */,
+				B64F6DE6152D9BFE00C66363 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B64F6DD0152D9BFE00C66363 = {
+			isa = PBXGroup;
+			children = (
+				B64F6DE7152D9BFE00C66363 /* GPSDelay */,
+				B64F6DDE152D9BFE00C66363 /* Frameworks */,
+				B64F6DDC152D9BFE00C66363 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B64F6DDC152D9BFE00C66363 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B64F6DDB152D9BFE00C66363 /* GPSDelay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B64F6DDE152D9BFE00C66363 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B64F6DDF152D9BFE00C66363 /* UIKit.framework */,
+				B64F6DE1152D9BFE00C66363 /* Foundation.framework */,
+				B64F6DE3152D9BFE00C66363 /* CoreGraphics.framework */,
+				B64F6DE5152D9BFE00C66363 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B64F6DE7152D9BFE00C66363 /* GPSDelay */ = {
+			isa = PBXGroup;
+			children = (
+				B64F6DF0152D9BFE00C66363 /* AppDelegate.h */,
+				B64F6DF1152D9BFE00C66363 /* AppDelegate.m */,
+				B64F6DF3152D9BFE00C66363 /* GPSDelay.xcdatamodeld */,
+				B64F6DE8152D9BFE00C66363 /* Supporting Files */,
+			);
+			path = GPSDelay;
+			sourceTree = "<group>";
+		};
+		B64F6DE8152D9BFE00C66363 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B64F6DE9152D9BFE00C66363 /* GPSDelay-Info.plist */,
+				B64F6DEA152D9BFE00C66363 /* InfoPlist.strings */,
+				B64F6DED152D9BFE00C66363 /* main.m */,
+				B64F6DEF152D9BFE00C66363 /* GPSDelay-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B64F6DDA152D9BFE00C66363 /* GPSDelay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B64F6DF8152D9BFE00C66363 /* Build configuration list for PBXNativeTarget "GPSDelay" */;
+			buildPhases = (
+				B64F6DD7152D9BFE00C66363 /* Sources */,
+				B64F6DD8152D9BFE00C66363 /* Frameworks */,
+				B64F6DD9152D9BFE00C66363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPSDelay;
+			productName = GPSDelay;
+			productReference = B64F6DDB152D9BFE00C66363 /* GPSDelay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B64F6DD2152D9BFE00C66363 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B64F6DD5152D9BFE00C66363 /* Build configuration list for PBXProject "GPSDelay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B64F6DD0152D9BFE00C66363;
+			productRefGroup = B64F6DDC152D9BFE00C66363 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B64F6DDA152D9BFE00C66363 /* GPSDelay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B64F6DD9152D9BFE00C66363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64F6DEC152D9BFE00C66363 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B64F6DD7152D9BFE00C66363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64F6DEE152D9BFE00C66363 /* main.m in Sources */,
+				B64F6DF2152D9BFE00C66363 /* AppDelegate.m in Sources */,
+				B64F6DF5152D9BFE00C66363 /* GPSDelay.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B64F6DEA152D9BFE00C66363 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B64F6DEB152D9BFE00C66363 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B64F6DF6152D9BFE00C66363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B64F6DF7152D9BFE00C66363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B64F6DF9152D9BFE00C66363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPSDelay/GPSDelay-Prefix.pch";
+				INFOPLIST_FILE = "GPSDelay/GPSDelay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B64F6DFA152D9BFE00C66363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPSDelay/GPSDelay-Prefix.pch";
+				INFOPLIST_FILE = "GPSDelay/GPSDelay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B64F6DD5152D9BFE00C66363 /* Build configuration list for PBXProject "GPSDelay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64F6DF6152D9BFE00C66363 /* Debug */,
+				B64F6DF7152D9BFE00C66363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B64F6DF8152D9BFE00C66363 /* Build configuration list for PBXNativeTarget "GPSDelay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64F6DF9152D9BFE00C66363 /* Debug */,
+				B64F6DFA152D9BFE00C66363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B64F6DF3152D9BFE00C66363 /* GPSDelay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B64F6DF4152D9BFE00C66363 /* GPSDelay.xcdatamodel */,
+			);
+			currentVersion = B64F6DF4152D9BFE00C66363 /* GPSDelay.xcdatamodel */;
+			path = GPSDelay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B64F6DD2152D9BFE00C66363 /* Project object */;
+}
