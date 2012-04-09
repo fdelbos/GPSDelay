@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="11D50b" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Capture" representedClassName="Capture" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="GPSSample" representedClassName="GPSSample" syncable="YES">
+        <attribute name="new_latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="new_longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="old_latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="old_longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="success" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="capture" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Capture" syncable="YES"/>
+    </entity>
+    <entity name="HTTPSample" representedClassName="HTTPSample" syncable="YES">
+        <attribute name="begin" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="end" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="success" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="capture" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Capture" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Capture" positionX="-2691" positionY="-5409" width="261" height="105"/>
+        <element name="GPSSample" positionX="-2853" positionY="-5100" width="128" height="120"/>
+        <element name="HTTPSample" positionX="-2837" positionY="-5256" width="128" height="120"/>
+    </elements>
 </model>

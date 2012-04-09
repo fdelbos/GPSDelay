@@ -10,4 +10,7 @@
 
 @interface CSVGenerator : NSObject
 
++(NSData*)generateGPS:(NSArray*)samples;
++(NSData*)generateHTTP:(NSArray*)samples;
+
 @end

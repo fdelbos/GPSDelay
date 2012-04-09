@@ -3,10 +3,11 @@
 //  GPSDelay
 //
 //  Created by Frederic Delbos on 4/5/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Frederic Delbos. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "GLB.h"
 
 @implementation AppDelegate
 
@@ -29,6 +30,8 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    [[GLB get] setMngObjCtx: self.managedObjectContext];
+    [self.window setRootViewController:[[GLB get] getMainView]];
     [self.window makeKeyAndVisible];
     return YES;
 }

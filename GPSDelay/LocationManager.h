@@ -7,7 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+#import "Capture.h"
 
-@interface LocationManager : NSObject
+@protocol LocationManagerDelegate
+@required
+-(void)locationCaptureUpdate:(BOOL)success;
+@end
+
+@interface LocationManager : NSObject <CLLocationManagerDelegate>
+{
+@private
+    CLLocationManager *_locationManager;
+    Capture *_capture;
+}
+
+@property (nonatomic, assign) id delegate;
+
+-(void)startCapture:(Capture*)capture;
+-(void)stopCapture;
 
 @end

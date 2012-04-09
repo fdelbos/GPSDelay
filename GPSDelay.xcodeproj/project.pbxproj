@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6192AB1152F120B00332F47 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6192AB0152F120B00332F47 /* CFNetwork.framework */; };
+		B6192ABF152F35A200332F47 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B6192ABC152F35A200332F47 /* MBProgressHUD.m */; };
+		B6192AC715303FA200332F47 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6192AC615303FA200332F47 /* CoreLocation.framework */; };
+		B6192ACA1530401D00332F47 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6192AC91530401D00332F47 /* LocationManager.m */; };
+		B6192ACD153096F600332F47 /* HTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6192ACC153096F600332F47 /* HTTPManager.m */; };
+		B6192AD0153098A800332F47 /* Capture.m in Sources */ = {isa = PBXBuildFile; fileRef = B6192ACF153098A700332F47 /* Capture.m */; };
 		B64F6DE0152D9BFE00C66363 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64F6DDF152D9BFE00C66363 /* UIKit.framework */; };
 		B64F6DE2152D9BFE00C66363 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64F6DE1152D9BFE00C66363 /* Foundation.framework */; };
 		B64F6DE4152D9BFE00C66363 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64F6DE3152D9BFE00C66363 /* CoreGraphics.framework */; };
@@ -15,21 +21,61 @@
 		B64F6DEE152D9BFE00C66363 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B64F6DED152D9BFE00C66363 /* main.m */; };
 		B64F6DF2152D9BFE00C66363 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B64F6DF1152D9BFE00C66363 /* AppDelegate.m */; };
 		B64F6DF5152D9BFE00C66363 /* GPSDelay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B64F6DF3152D9BFE00C66363 /* GPSDelay.xcdatamodeld */; };
+		B64F6DFD152D9C7A00C66363 /* GLB.m in Sources */ = {isa = PBXBuildFile; fileRef = B64F6DFC152D9C7A00C66363 /* GLB.m */; };
+		B64F6E06152DCDFF00C66363 /* CaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = B64F6E04152DCDFF00C66363 /* CaptureView.m */; };
+		B64F6E07152DCDFF00C66363 /* CaptureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64F6E05152DCDFF00C66363 /* CaptureView.xib */; };
+		B64F6E10152E394500C66363 /* ListingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B64F6E0F152E394500C66363 /* ListingView.m */; };
+		B6F2B5501531A10C00599DF3 /* GPSSample.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2B54F1531A10C00599DF3 /* GPSSample.m */; };
+		B6F2B5531531B22800599DF3 /* HTTPSample.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2B5521531B22800599DF3 /* HTTPSample.m */; };
+		B6F2B5611531EEB300599DF3 /* ResultsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2B55F1531EEB200599DF3 /* ResultsView.m */; };
+		B6F2B5621531EEB300599DF3 /* ResultsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6F2B5601531EEB200599DF3 /* ResultsView.xib */; };
+		B6F2B5661532359A00599DF3 /* CSVGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2B5651532359A00599DF3 /* CSVGenerator.m */; };
+		B6F2B56815323DF100599DF3 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F2B56715323DF100599DF3 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6192AB0152F120B00332F47 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B6192AB2152F121A00332F47 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B6192AB4152F125500332F47 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B6192AB6152F145900332F47 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B6192ABB152F35A200332F47 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		B6192ABC152F35A200332F47 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		B6192AC615303FA200332F47 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B6192AC81530401D00332F47 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		B6192AC91530401D00332F47 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		B6192ACB153096F600332F47 /* HTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPManager.h; sourceTree = "<group>"; };
+		B6192ACC153096F600332F47 /* HTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPManager.m; sourceTree = "<group>"; };
+		B6192ACE153098A700332F47 /* Capture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Capture.h; sourceTree = "<group>"; };
+		B6192ACF153098A700332F47 /* Capture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Capture.m; sourceTree = "<group>"; };
 		B64F6DDB152D9BFE00C66363 /* GPSDelay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSDelay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64F6DDF152D9BFE00C66363 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B64F6DE1152D9BFE00C66363 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B64F6DE3152D9BFE00C66363 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B64F6DE5152D9BFE00C66363 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		B64F6DE9152D9BFE00C66363 /* GPSDelay-Info.plist */ = {isa = PBXFileReference; path = "GPSDelay-Info.plist"; sourceTree = "<group>"; };
+		B64F6DE9152D9BFE00C66363 /* GPSDelay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPSDelay-Info.plist"; sourceTree = "<group>"; };
 		B64F6DEB152D9BFE00C66363 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B64F6DED152D9BFE00C66363 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B64F6DEF152D9BFE00C66363 /* GPSDelay-Prefix.pch */ = {isa = PBXFileReference; path = "GPSDelay-Prefix.pch"; sourceTree = "<group>"; };
-		B64F6DF0152D9BFE00C66363 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		B64F6DEF152D9BFE00C66363 /* GPSDelay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPSDelay-Prefix.pch"; sourceTree = "<group>"; };
+		B64F6DF0152D9BFE00C66363 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B64F6DF1152D9BFE00C66363 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B64F6DF4152D9BFE00C66363 /* GPSDelay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GPSDelay.xcdatamodel; sourceTree = "<group>"; };
+		B64F6DFB152D9C7A00C66363 /* GLB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLB.h; sourceTree = "<group>"; };
+		B64F6DFC152D9C7A00C66363 /* GLB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLB.m; sourceTree = "<group>"; };
+		B64F6E03152DCDFF00C66363 /* CaptureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureView.h; sourceTree = "<group>"; };
+		B64F6E04152DCDFF00C66363 /* CaptureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureView.m; sourceTree = "<group>"; };
+		B64F6E05152DCDFF00C66363 /* CaptureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaptureView.xib; sourceTree = "<group>"; };
+		B64F6E0E152E394500C66363 /* ListingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListingView.h; sourceTree = "<group>"; };
+		B64F6E0F152E394500C66363 /* ListingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListingView.m; sourceTree = "<group>"; };
+		B6F2B54E1531A10C00599DF3 /* GPSSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSSample.h; sourceTree = "<group>"; };
+		B6F2B54F1531A10C00599DF3 /* GPSSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSSample.m; sourceTree = "<group>"; };
+		B6F2B5511531B22800599DF3 /* HTTPSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPSample.h; sourceTree = "<group>"; };
+		B6F2B5521531B22800599DF3 /* HTTPSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPSample.m; sourceTree = "<group>"; };
+		B6F2B55E1531EEB200599DF3 /* ResultsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsView.h; sourceTree = "<group>"; };
+		B6F2B55F1531EEB200599DF3 /* ResultsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsView.m; sourceTree = "<group>"; };
+		B6F2B5601531EEB200599DF3 /* ResultsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultsView.xib; sourceTree = "<group>"; };
+		B6F2B5641532359A00599DF3 /* CSVGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVGenerator.h; sourceTree = "<group>"; };
+		B6F2B5651532359A00599DF3 /* CSVGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVGenerator.m; sourceTree = "<group>"; };
+		B6F2B56715323DF100599DF3 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6F2B56815323DF100599DF3 /* MessageUI.framework in Frameworks */,
+				B6192AC715303FA200332F47 /* CoreLocation.framework in Frameworks */,
+				B6192AB1152F120B00332F47 /* CFNetwork.framework in Frameworks */,
 				B64F6DE0152D9BFE00C66363 /* UIKit.framework in Frameworks */,
 				B64F6DE2152D9BFE00C66363 /* Foundation.framework in Frameworks */,
 				B64F6DE4152D9BFE00C66363 /* CoreGraphics.framework in Frameworks */,
@@ -47,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6192AB8152F35A200332F47 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B6192ABB152F35A200332F47 /* MBProgressHUD.h */,
+				B6192ABC152F35A200332F47 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		B64F6DD0152D9BFE00C66363 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +125,12 @@
 		B64F6DDE152D9BFE00C66363 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6192AB4152F125500332F47 /* libz.dylib */,
+				B6F2B56715323DF100599DF3 /* MessageUI.framework */,
+				B6192AC615303FA200332F47 /* CoreLocation.framework */,
+				B6192AB6152F145900332F47 /* SystemConfiguration.framework */,
+				B6192AB2152F121A00332F47 /* MobileCoreServices.framework */,
+				B6192AB0152F120B00332F47 /* CFNetwork.framework */,
 				B64F6DDF152D9BFE00C66363 /* UIKit.framework */,
 				B64F6DE1152D9BFE00C66363 /* Foundation.framework */,
 				B64F6DE3152D9BFE00C66363 /* CoreGraphics.framework */,
@@ -78,9 +142,17 @@
 		B64F6DE7152D9BFE00C66363 /* GPSDelay */ = {
 			isa = PBXGroup;
 			children = (
+				B6F2B5631531FABF00599DF3 /* Views */,
+				B6F2B54715309A9B00599DF3 /* Model */,
+				B6192AB8152F35A200332F47 /* MBProgressHUD */,
+				B64F6DFB152D9C7A00C66363 /* GLB.h */,
+				B64F6DFC152D9C7A00C66363 /* GLB.m */,
 				B64F6DF0152D9BFE00C66363 /* AppDelegate.h */,
 				B64F6DF1152D9BFE00C66363 /* AppDelegate.m */,
-				B64F6DF3152D9BFE00C66363 /* GPSDelay.xcdatamodeld */,
+				B6192AC81530401D00332F47 /* LocationManager.h */,
+				B6192AC91530401D00332F47 /* LocationManager.m */,
+				B6192ACB153096F600332F47 /* HTTPManager.h */,
+				B6192ACC153096F600332F47 /* HTTPManager.m */,
 				B64F6DE8152D9BFE00C66363 /* Supporting Files */,
 			);
 			path = GPSDelay;
@@ -95,6 +167,37 @@
 				B64F6DEF152D9BFE00C66363 /* GPSDelay-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6F2B54715309A9B00599DF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B64F6DF3152D9BFE00C66363 /* GPSDelay.xcdatamodeld */,
+				B6F2B5511531B22800599DF3 /* HTTPSample.h */,
+				B6F2B5521531B22800599DF3 /* HTTPSample.m */,
+				B6F2B54E1531A10C00599DF3 /* GPSSample.h */,
+				B6F2B54F1531A10C00599DF3 /* GPSSample.m */,
+				B6192ACE153098A700332F47 /* Capture.h */,
+				B6192ACF153098A700332F47 /* Capture.m */,
+				B6F2B5641532359A00599DF3 /* CSVGenerator.h */,
+				B6F2B5651532359A00599DF3 /* CSVGenerator.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B6F2B5631531FABF00599DF3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B64F6E0E152E394500C66363 /* ListingView.h */,
+				B64F6E0F152E394500C66363 /* ListingView.m */,
+				B64F6E03152DCDFF00C66363 /* CaptureView.h */,
+				B64F6E04152DCDFF00C66363 /* CaptureView.m */,
+				B64F6E05152DCDFF00C66363 /* CaptureView.xib */,
+				B6F2B55E1531EEB200599DF3 /* ResultsView.h */,
+				B6F2B55F1531EEB200599DF3 /* ResultsView.m */,
+				B6F2B5601531EEB200599DF3 /* ResultsView.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +227,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Frederic Delbos";
 			};
 			buildConfigurationList = B64F6DD5152D9BFE00C66363 /* Build configuration list for PBXProject "GPSDelay" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -148,6 +252,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B64F6DEC152D9BFE00C66363 /* InfoPlist.strings in Resources */,
+				B64F6E07152DCDFF00C66363 /* CaptureView.xib in Resources */,
+				B6F2B5621531EEB300599DF3 /* ResultsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +267,17 @@
 				B64F6DEE152D9BFE00C66363 /* main.m in Sources */,
 				B64F6DF2152D9BFE00C66363 /* AppDelegate.m in Sources */,
 				B64F6DF5152D9BFE00C66363 /* GPSDelay.xcdatamodeld in Sources */,
+				B64F6DFD152D9C7A00C66363 /* GLB.m in Sources */,
+				B64F6E06152DCDFF00C66363 /* CaptureView.m in Sources */,
+				B64F6E10152E394500C66363 /* ListingView.m in Sources */,
+				B6192ABF152F35A200332F47 /* MBProgressHUD.m in Sources */,
+				B6192ACA1530401D00332F47 /* LocationManager.m in Sources */,
+				B6192ACD153096F600332F47 /* HTTPManager.m in Sources */,
+				B6192AD0153098A800332F47 /* Capture.m in Sources */,
+				B6F2B5501531A10C00599DF3 /* GPSSample.m in Sources */,
+				B6F2B5531531B22800599DF3 /* HTTPSample.m in Sources */,
+				B6F2B5611531EEB300599DF3 /* ResultsView.m in Sources */,
+				B6F2B5661532359A00599DF3 /* CSVGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +300,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Frederic Delbos (2396Q2FSFW)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -198,6 +316,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "ED680C3C-BD03-4412-915E-1C9959317156";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -207,6 +326,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Frederic Delbos (2396Q2FSFW)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -216,6 +336,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "ED680C3C-BD03-4412-915E-1C9959317156";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -227,7 +348,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GPSDelay/GPSDelay-Prefix.pch";
 				INFOPLIST_FILE = "GPSDelay/GPSDelay-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -238,7 +361,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GPSDelay/GPSDelay-Prefix.pch";
 				INFOPLIST_FILE = "GPSDelay/GPSDelay-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -262,6 +387,7 @@
 				B64F6DFA152D9BFE00C66363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
